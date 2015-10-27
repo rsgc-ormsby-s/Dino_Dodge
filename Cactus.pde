@@ -28,8 +28,6 @@ class Cactus {
       x1 = 900; // place off screen on right 
       s1 = -1;  // reset the speed (to avoid insanely fast movement)
     }
-    // draw a circle at bottom right corner of the screen
-    //       x    y    w   h
-    ellipse(x1, 175, 50, 50);
+    
   }
 }
