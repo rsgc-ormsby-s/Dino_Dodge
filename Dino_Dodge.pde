@@ -14,7 +14,7 @@ void setup() {
 
   c1 = new Cactus (900, 175, -0.1, -1);
   d1 = new Dinosaur (0, 170, 0);
-  
+
   // creates and initializes the dino object 
 
 
@@ -29,14 +29,6 @@ void draw() {
 
   c1.update(gravity);
   d1.update(gravity);
-  
-  //// status updates
-  //textSize(12);
-  //fill(0);
-  //text("dinoY is " + dinoY, 150, 25);
-  //text("dinoS is " + dinoS, 150, 50);
-  //text("dinoA is " + dinoA, 150, 75);
-  //text("distance is " + distance, 150, 100);
 
   //// determine distance between the objects
   ////        dino - cactus
@@ -56,4 +48,7 @@ void keyPressed() {
   //if (dinoY == 170) {
   //  dinoA = -1;
   //}
+  if (d1.getY() == 170) {
+    d1.setA(-1);
+  }
 }

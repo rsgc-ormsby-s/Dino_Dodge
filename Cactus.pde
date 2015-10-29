@@ -23,11 +23,15 @@ class Cactus {
     // create the appearance of moving by changing the x position
     x1 = x1 + s1;
 
-  // put the cactus back on the right edge if it goes off the left edge
+    // put the cactus back on the right edge if it goes off the left edge
     if (x1 < -25) {
       x1 = 900; // place off screen on right 
       s1 = -1;  // reset the speed (to avoid insanely fast movement)
     }
     
+    // draw the cactus
+     // draw a circle at bottom right corner of the screen
+    //       x    y    w   h
+    ellipse(x1, 175, 50, 50);
   }
 }
